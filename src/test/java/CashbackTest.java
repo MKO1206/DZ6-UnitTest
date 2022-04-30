@@ -29,13 +29,4 @@ public class CashbackTest {
         double expected = 1000;
         assertEquals(expected, actual);
     }
-
-    @Test
-    void shouldReturn0IfAmount1000() {
-        Cashback service = new Cashback();
-        double amount = 1000;
-        double actual = service.remain(amount);
-        double expected = 0;
-        assertEquals(expected, actual);
-    }
 }
